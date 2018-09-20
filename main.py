@@ -7,9 +7,9 @@ MAC = 'MAC'
 def get_os():
     if sys.platform == 'linux' or sys.platform == 'linux2':
         return LINUX
-    elif sys.platform == 'darwin':
-        return WINDOWS
     elif sys.platform == 'win32':
+        return WINDOWS
+    elif sys.platform == 'darwin':
         return MAC
     return 'UNKNOWN'
 
